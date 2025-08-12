@@ -1,0 +1,23 @@
+[project]
+name = 'Stack-web3-workshop'
+description = ''
+authors = []
+telemetry = true
+cache_dir = '.\.cache'
+requirements = []
+[contracts.nft-job-board-with-skill-verfication]
+path = 'contracts/nft-job-board-with-skill-verfication.clar'
+clarity_version = 3
+epoch = 'latest'
+[repl.analysis]
+passes = ['check_checker']
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
+
+[repl.remote_data]
+enabled = false
+api_url = 'https://api.hiro.so'
