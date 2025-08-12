@@ -1,0 +1,18 @@
+---
+id: 0
+name: Testnet deployment
+network: testnet
+stacks-node: "https://api.testnet.hiro.so"
+bitcoin-node: "http://blockstack:blockstacksystem@bitcoind.testnet.stacks.co:18332"
+plan:
+  batches:
+    - id: 0
+      transactions:
+        - contract-publish:
+            contract-name: nft-job-board-with-skill-verfication
+            expected-sender: ST1JR1FYVW4KJQFNTR7SQMRAC2F7S1EF3V5DTYM39
+            cost: 16450
+            path: "contracts\\nft-job-board-with-skill-verfication.clar"
+            anchor-block-only: true
+            clarity-version: 3
+      epoch: "3.2"
